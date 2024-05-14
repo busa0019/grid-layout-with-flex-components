@@ -33,7 +33,7 @@ body {
     border-radius: 8px;
     text-align: left; /* Center the text in the button */
     margin-top: 10px; /* Adds space between the paragraph and the button */
-    order: 4; 
+    order: 4;/* Button comes last */ 
   }
   .emoji p {
     flex-grow: 1; /* Allows paragraph to take available space pushing the button down */
@@ -45,4 +45,5 @@ body {
     display: block; /* Makes the icon block level to center text */
     text-align: center;
     margin: 10px 0; /* Adds vertical spacing */
+    order: 1;  /* Highest order, comes first */
   }
