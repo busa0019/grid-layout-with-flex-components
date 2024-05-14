@@ -31,7 +31,7 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    text-align: left; /* Center the text in the button */
+    text-align: left; /* Aligns the text to the left inside the button */
     margin-top: 10px; /* Adds space between the paragraph and the button */
     order: 4;/* Button comes last */ 
   }
