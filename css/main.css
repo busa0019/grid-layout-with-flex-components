@@ -2,48 +2,62 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
   }
+
+  /* Styling for the emoji cards grid container */
   .emojis {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin: 20px;
+    display: grid;/* Uses grid layout to arrange emoji cards */
+    grid-template-columns: repeat(2, 1fr);/* Creates two columns of equal width */
+    gap: 20px;/* Sets space between grid items */
+    margin: 20px;/* Adds margin around the grid container */
   }
   
+  .siteheader h1 {
+    margin-left: 20px;  /* Adds left margin to the header to move it slightly right */
+  }
+  
+  p {
+    font-weight: bold; /* Makes all paragraph text bold */
+  }
+  
+/* Basic styling for individual emoji cards */
   .emoji {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex; /* Enables flexbox layout within each card */
+    flex-direction: column;/* Stacks items vertically */
+    justify-content: space-between;/* Distributes space between items */
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
   }
   
+  /* Styles for headings within each emoji card */
   .emoji h2 {
     margin:  0 0 10px 0;
     border-bottom: 2px solid #ccc;
-    order:2;
+    order:2;/* Positions the heading second in the flex container */
 
   }
   
+  /* Styles for buttons within emoji cards */
   .emoji a {
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    text-align: left; /* Aligns the text to the left inside the button */
-    margin-top: 10px; /* Adds space between the paragraph and the button */
-    order: 4;/* Button comes last */ 
+    text-align: left; 
+    margin-top: 10px; 
+    order: 4;/* Positions the button last in the flex container */ 
   }
+
   .emoji p {
-    flex-grow: 1; /* Allows paragraph to take available space pushing the button down */
-    order:3;
+    flex-grow: 1; /* Allows paragraph to take available space pushing the button downward */
+    order:3; /* Positions the paragraph third in the flex container */
   }
   
   .icon {
     font-size: 4rem;
-    display: block; /* Makes the icon block level to center text */
+    display: block; 
     text-align: center;
-    margin: 10px 0; /* Adds vertical spacing */
-    order: 1;  /* Highest order, comes first */
+    margin: 10px 0; 
+    order: 1;  /* Positions the icon first in the flex container */
   }
