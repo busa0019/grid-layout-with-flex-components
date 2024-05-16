@@ -6,7 +6,7 @@ body {
   /* Styling for the emoji cards grid container */
   .emojis {
     display: grid;/* Uses grid layout to arrange emoji cards */
-    grid-template-columns: repeat(2, 1fr);/* Creates two columns of equal width */
+    grid-template-columns: repeat(2, 1fr);/* Create two columns of equal width */
     gap: 20px;/* Sets space between grid items */
     margin: 20px;/* Adds margin around the grid container */
   }
